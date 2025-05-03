@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaurya | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="animate">Hi, I'm Shaurya</h1>
+    <p class="animate">A Passionate Student</p>
+  </header>
+
+  <section class="about animate">
+    <h2>About Me</h2>
+    <p>I am currently a student who loves to explore web development and learn new things every day.</p>
+  </section>
+
+  <section class="projects animate">
+    <h2>Projects</h2>
+    <ul>
+      <li>Basic Calculator App</li>
+      <li>To-Do List using HTML/CSS/JS</li>
+      <li>Personal Blog Site</li>
+    </ul>
+  </section>
+
+  <section class="contact animate">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:shauryagour2021@gmail.com">shauryagour2021@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/shauryagour" target="_blank">linkedin.com/in/shauryagour</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shaurya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
